@@ -70,7 +70,7 @@ namespace ConferenceTracker.Controllers
             _logger.LogInformation("Getting presentation id:\" + id +  \" for edit.");
             if (id == null)
             {
-                _logger.LogWarning("Presentation id was null.");
+                _logger.LogError("Presentation id was null.");
                 return NotFound();
             }
 
